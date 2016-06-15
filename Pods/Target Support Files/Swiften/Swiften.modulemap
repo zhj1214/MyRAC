@@ -1,0 +1,6 @@
+framework module Swiften {
+  umbrella header "Swiften-umbrella.h"
+
+  export *
+  module * { export * }
+}

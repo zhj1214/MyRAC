@@ -1,0 +1,53 @@
+{
+  "name": "Swiften",
+  "version": "0.0.1",
+  "summary": "A short description of Swiften.",
+  "description": "Swiften",
+  "homepage": "https://github.com/catorv/swiften",
+  "license": "MIT",
+  "authors": {
+    "Cator V": "hi@catorv.com"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "git": "https://github.com/catorv/swiften",
+    "tag": "0.0.1"
+  },
+  "source_files": [
+    "Swiften",
+    "Swiften/**/*.{h,m,c,mm,swift}"
+  ],
+  "preserve_paths": [
+    "CocoaPods",
+    "CocoaPods/**/*"
+  ],
+  "pod_target_xcconfig": {
+    "SWIFT_INCLUDE_PATHS[sdk=iphoneos*]": "$(SRCROOT)/Swiften/CocoaPods/iphoneos",
+    "SWIFT_INCLUDE_PATHS[sdk=iphonesimulator*]": "$(SRCROOT)/Swiften/CocoaPods/iphonesimulator"
+  },
+  "dependencies": {
+    "SwiftyJSON": [
+
+    ],
+    "KeychainSwift": [
+
+    ],
+    "ObjectMapper": [
+
+    ],
+    "RealmSwift": [
+      "~> 0.98.8"
+    ],
+    "Alamofire": [
+
+    ],
+    "AlamofireObjectMapper": [
+
+    ],
+    "AlamofireImage": [
+
+    ]
+  }
+}
